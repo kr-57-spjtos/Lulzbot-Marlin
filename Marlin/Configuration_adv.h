@@ -3016,7 +3016,7 @@
     #if ANY(TAZPro, TAZProXT)
       #if ANY(TOOLHEAD_Legacy_Universal, LULZBOT_Galaxy_Series)
         #define X_STALL_SENSITIVITY  3
-        #define Y_STALL_SENSITIVITY  5
+        #define Y_STALL_SENSITIVITY  1.25
       #else
         #define X_STALL_SENSITIVITY  5
         #define Y_STALL_SENSITIVITY  5

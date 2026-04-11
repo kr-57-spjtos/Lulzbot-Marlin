@@ -139,7 +139,7 @@
 #if defined(LULZBOT_Quiver_TAZPro)
   #define TAZPro
   #define LULZBOT_BLTouch
-  #define LULZBOT_CUSTOM_MACHINE_NAME "LulzBot TAZ Pro"
+  #define LULZBOT_CUSTOM_MACHINE_NAME "Larry :)"
   #define LULZBOT_LCD_MACHINE_NAME "TAZ Pro"
   #define LULZBOT_MACHINE_UUID "a952577d-8722-483a-999d-acdc9e772b7b"
   #define LULZBOT_USE_ARCHIM2
@@ -1657,7 +1657,7 @@
 #elif ANY(TAZ6, Workhorse)
   #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -1.2 }
 #elif ANY(TAZPro, TAZProXT)
-  #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -1.102 }
+  #define NOZZLE_TO_PROBE_OFFSET { -33, 12.5, -1.102 }
 #elif ANY(Sidekick_289, Sidekick_747)
   #define NOZZLE_TO_PROBE_OFFSET { -1, 50, -1.23 }
 #endif
@@ -1960,7 +1960,7 @@
     #define LULZBOT_X_MAX_POS 289
     #define LULZBOT_Y_MAX_POS 613
     #define LULZBOT_Z_MIN_POS -9
-    #define LULZBOT_Z_MAX_POS 285 
+    #define LULZBOT_Z_MAX_POS 282 
   #endif
 #elif ENABLED(TAZProXT)
     #if defined(TOOLHEAD_Quiver_DualExtruder)
