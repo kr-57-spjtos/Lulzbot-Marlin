@@ -6,7 +6,6 @@
 //#define LULZBOT_Sidekick_289
 //#define LULZBOT_Sidekick_747
 //#define LULZBOT_KangarooPaw_Experimental
-
 //#define TazDualZ
 #define LULZBOT_FILAMENT_RUNOUT
 /************** Uncomment a Tool Head Option From Below *********************/
@@ -24,7 +23,6 @@
 //#define TOOLHEAD_Tilapia_SingleExtruder         // TAZ Legacy Standard Single Extruder 
 //#define TOOLHEAD_Yellowfin_DualExtruderV3       // TAZ Legacy Dual Extruder
 //#define TOOLHEAD_KangarooPaw_SingleExtruder     // Bio Single syringe
-
 /**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
@@ -47,7 +45,6 @@
  *
  */
 #pragma once
-
 /**
  * Configuration.h
  *
@@ -63,7 +60,6 @@
  * Advanced settings can be found in Configuration_adv.h
  */
 #define CONFIGURATION_H_VERSION 02000900
-
 //===========================================================================
 //============================= Getting Started =============================
 //===========================================================================
@@ -83,7 +79,6 @@
  * Calibration Objects: https://www.thingiverse.com/thing:5573
  *                      https://www.thingiverse.com/thing:1278865
  */
-
 //===========================================================================
 //========================== DELTA / SCARA / TPARA ==========================
 //===========================================================================
@@ -92,14 +87,11 @@
 // Examples are located in config/examples/delta, .../SCARA, and .../TPARA.
 //
 //===========================================================================
-
 // @section info
-
 // Author info of this build printed to the host during boot and M115
 #define STRING_CONFIG_H_AUTHOR "Lulzbot" // Who made the changes.
 #define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 #define LULZBOT_FW_VERSION "2.0.9.0.17"
-
 /**
  * *** VENDORS PLEASE READ ***
  *
@@ -110,16 +102,12 @@
  * We encourage you to take advantage of this new feature and we also
  * respectfully request that you retain the unmodified Marlin boot screen.
  */
-
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
 #define SHOW_BOOTSCREEN
-
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 #define SHOW_CUSTOM_BOOTSCREEN
-
 // Show the bitmap in Marlin/_Statusscreen.h on the status screen.
 //#define CUSTOM_STATUS_SCREEN_IMAGE
-
 // @section machine
 #if defined(LULZBOT_Oliveoil_TAZ6)
   #define TAZ6
@@ -128,14 +116,12 @@
   #define LULZBOT_MACHINE_UUID "845f003c-aebd-4e53-a6b9-7d0984fde609"
   #define LULZBOT_USE_Z_SCREW
 #endif
-
 #if defined(LULZBOT_Hibiscus_Mini2)
   #define MiniV2
   #define LULZBOT_CUSTOM_MACHINE_NAME "LulzBot Mini 2"
   #define LULZBOT_LCD_MACHINE_NAME "Mini 2"
   #define LULZBOT_MACHINE_UUID "e5502411-d46d-421d-ba3a-a20126d7930f"
 #endif
-
 #if defined(LULZBOT_Quiver_TAZPro)
   #define TAZPro
   #define LULZBOT_BLTouch
@@ -144,7 +130,6 @@
   #define LULZBOT_MACHINE_UUID "a952577d-8722-483a-999d-acdc9e772b7b"
   #define LULZBOT_USE_ARCHIM2
 #endif
-
 #if defined(LULZBOT_Gladiator_TAZProXT)
   #define TAZProXT
   #define LULZBOT_CUSTOM_MACHINE_NAME "LulzBot TAZ ProXT"
@@ -152,14 +137,12 @@
   #define LULZBOT_MACHINE_UUID "28ac1ce7-ca05-4f8e-8f1f-1d2f4496a1eb"
   #define LULZBOT_USE_ARCHIM2
 #endif
-
 #if defined(LULZBOT_Redgum_TAZWorkhorse)
   #define Workhorse
   #define LULZBOT_CUSTOM_MACHINE_NAME "TAZ Workhorse Edition"
   #define LULZBOT_LCD_MACHINE_NAME "LulzBot TAZ"
   #define LULZBOT_MACHINE_UUID "5ee798fb-4062-4d35-8224-5e846ffb45a5"
 #endif
-
 #if defined(LULZBOT_Sidekick_289)
   #define Sidekick_289
   #define LULZBOT_CUSTOM_MACHINE_NAME "Taz SideKick 289"
@@ -170,7 +153,6 @@
   #define LULZBOT_USE_EINSY_RETRO
   #define Z_AXIS_WILL_FALL
 #endif
-
 #if defined(LULZBOT_Sidekick_747)
   #define Sidekick_747
   #define LULZBOT_CUSTOM_MACHINE_NAME "Taz SideKick 747"
@@ -181,7 +163,6 @@
   #define LULZBOT_USE_EINSY_RETRO
   #define Z_AXIS_WILL_FALL
 #endif
-
 /* Unsupported or unreleased experimental configurations. Use at your own risk. */
 #if defined(LULZBOT_KangarooPaw_Experimental)
   #define Bio
@@ -209,9 +190,9 @@
   #define LULZBOT_SDSUPPORT
   #define LULZBOT_USB_FLASH_DRIVE_SUPPORT
   #define LULZBOT_USB_USE_UHS3
+
   //#define LULZBOT_MANUAL_USB_STARTUP
 #endif
-
 /**
  * Select the serial port on the board to use for communication with the host.
  * This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -225,7 +206,6 @@
 #else
   #define SERIAL_PORT -1
 #endif
-
 /**
  * Serial Port Baud Rate
  * This is the default communication speed for all serial ports.
@@ -239,7 +219,6 @@
  */
 #define BAUDRATE 250000
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
-
 /**
  * Select a secondary serial port on the board to use for communication with the host.
  * Currently Ethernet (-2) is only supported on Teensy 4.1 boards.
@@ -247,7 +226,6 @@
  */
 //#define SERIAL_PORT_2 -1
 //#define BAUDRATE_2 250000   // Enable to override BAUDRATE
-
 /**
  * Select a third serial port on the board to use for communication with the host.
  * Currently only supported for AVR, DUE, LPC1768/9 and STM32/STM32F1
@@ -255,10 +233,8 @@
  */
 //#define SERIAL_PORT_3 1
 //#define BAUDRATE_3 250000   // Enable to override BAUDRATE
-
 // Enable the Bluetooth serial interface on AT90USB devices
 //#define BLUETOOTH
-
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
   #if ANY(MiniV2, Sidekick_289, Sidekick_747)
@@ -269,16 +245,14 @@
     #define MOTHERBOARD BOARD_ARCHIM2
   #endif
 #endif
-
 // Name displayed in the LCD "Ready" message and Info menu
 #define CUSTOM_MACHINE_NAME  LULZBOT_CUSTOM_MACHINE_NAME
 #define MACHINE_UUID         LULZBOT_MACHINE_UUID
-
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
 //#define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
-
 /**
+
  * Define the number of coordinated linear axes.
  * See https://github.com/DerAndere1/Marlin/wiki
  * Each linear axis gets its own stepper control and endstop:
@@ -293,7 +267,6 @@
  * :[3, 4, 5, 6]
  */
 #define LINEAR_AXES 3
-
 /**
  * Axis codes for additional axes:
  * This defines the axis code that is used in G-code commands to
@@ -316,11 +289,8 @@
 #if LINEAR_AXES >= 6
   #define AXIS6_NAME 'C' // :['A', 'B', 'C', 'U', 'V', 'W']
 #endif
-
 // @section extruder
-
 /****************************** TAZ 4/5/6 TOOLHEADS ********************************/
-
 #if defined(TOOLHEAD_Yellowfin_DualExtruderV3)
     // Prototype Dual v3 for TAZ.
     #define LULZBOT_LCD_TOOLHEAD_NAME              "Dual Extruder 3"
@@ -349,6 +319,7 @@
         #define LULZBOT_Z_SAFE_HOMING_Y_POINT         (258)
         #undef  LULZBOT_Z_HOMING_HEIGHT
         #define LULZBOT_Z_HOMING_HEIGHT                10
+
         #undef  LULZBOT_Z_CLEARANCE_DEPLOY_PROBE
         #define LULZBOT_Z_CLEARANCE_DEPLOY_PROBE       10
         #undef  LULZBOT_Z_CLEARANCE_BETWEEN_PROBES
@@ -419,6 +390,7 @@
   #define LULZBOT_TOOLHEAD_X_MAX_ADJ         0
   #define LULZBOT_TOOLHEAD_X_MIN_ADJ         0
   #define LULZBOT_TOOLHEAD_Y_MAX_ADJ         0
+
   #define LULZBOT_TOOLHEAD_Y_MIN_ADJ         0
   #define LULZBOT_TOOLHEAD_Z_MAX_ADJ         0
   #define LULZBOT_TOOLHEAD_Z_MIN_ADJ         0
@@ -489,6 +461,7 @@
   //#define SINGLENOZZLE_STANDBY_TEMP
   //#define SINGLENOZZLE_STANDBY_FAN
 #endif
+
 
 /**
  * Multi-Material Unit
@@ -630,6 +603,7 @@
   #endif
 #endif
 
+
 // Offset of the extruders (uncomment if using more than one and relying on firmware to position when changing).
 // The offset has to be X=0, Y=0 for the extruder 0 hotend (default extruder).
 // For the other hotends it is their distance from the extruder 0 hotend.
@@ -699,6 +673,7 @@
  *   501 : 100K Zonestar (Tronxy X3A) Thermistor
  *   502 : 100K Zonestar Thermistor used by hot bed in Zonestar Průša P802M
  *   512 : 100k RPW-Ultra hotend thermistor (4.7k pullup)
+
  *     6 : 100k EPCOS - Not as accurate as table 1 (created using a fluke thermocouple) (4.7k pullup)
  *     7 : 100k Honeywell thermistor 135-104LAG-J01 (4.7k pullup)
  *    71 : 100k Honeywell thermistor 135-104LAF-J01 (4.7k pullup)
@@ -750,7 +725,7 @@
 #define TEMP_SENSOR_4 0
 #define TEMP_SENSOR_5 0
 #define TEMP_SENSOR_6 0
-#define TEMP_SENSOR_7 0 
+#define TEMP_SENSOR_7 0
 #define TEMP_SENSOR_BED 7
 #define TEMP_SENSOR_PROBE 0
 #define TEMP_SENSOR_CHAMBER 0
@@ -769,6 +744,7 @@
 
 #if defined(TOOLHEAD_Quiver_DualExtruder) // Shorten time that Dual Extruder has to wait for M109
   #define TEMP_RESIDENCY_TIME 5         // (seconds) Time to wait for hotend to "settle" in M109
+
 #else
   #define TEMP_RESIDENCY_TIME 10        // (seconds) Time to wait for hotend to "settle" in M109
 #endif
@@ -839,6 +815,7 @@
  * a MAXTEMP shutdown! Use these values to forbid temperatures being set too close to MAXTEMP.
  */
 #define HOTEND_OVERSHOOT 15   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
+
 #define BED_OVERSHOOT    10   // (°C) Forbid temperatures over MAXTEMP - OVERSHOOT
 #define COOLER_OVERSHOOT  2   // (°C) Forbid temperatures closer than OVERSHOOT
 
@@ -909,6 +886,7 @@
     #define M175_DEFAULT_Kd 63.59
     #define charM175_DEFAULT_Kp "22.12"
     #define charM175_DEFAULT_Ki "1.94"
+
     #define charM175_DEFAULT_Kd "63.59"
 
   // HS & HSPLUS Tool heads
@@ -979,6 +957,7 @@
 
     #elif ENABLED(TOOLHEAD_M175)
       #define DEFAULT_Kp M175_DEFAULT_Kp
+
       #define DEFAULT_Ki M175_DEFAULT_Ki
       #define DEFAULT_Kd M175_DEFAULT_Kd
 
@@ -1049,6 +1028,7 @@
   #elif ENABLED(Sidekick_289)
     #define DEFAULT_bedKp 21.44
     #define DEFAULT_bedKi 0.49
+
     #define DEFAULT_bedKd 626.10
   #elif ENABLED(Sidekick_747)
     #define DEFAULT_bedKp 22.77
@@ -1189,6 +1169,7 @@
 #endif
 #define USE_ZMIN_PLUG
 //#define USE_XMAX_PLUG
+
 #if DISABLED(Workhorse, Sidekick_289, Sidekick_747)
   #define USE_YMAX_PLUG
 #endif
@@ -1259,6 +1240,7 @@
 #if ANY(MiniV2, TAZPro, TAZProXT, Sidekick_289, Sidekick_747)
   #define Y_MAX_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
 #else
+
   #define Y_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 #endif
 #define Z_MAX_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
@@ -1329,6 +1311,7 @@
  * Enable if your probe or endstops falsely trigger due to noise.
  *
  * - Higher values may affect repeatability or accuracy of some bed probes.
+
  * - To fix noise install a 100nF ceramic capacitor in parallel with the switch.
  * - This feature is not required for common micro-switches mounted on PCBs
  *   based on the Makerbot design, which already have the 100nF capacitor.
@@ -1399,6 +1382,7 @@
 
 /**
  * Default Max Acceleration (change/s) change = mm/s
+
  * (Maximum start speed for accelerated moves)
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
@@ -1469,6 +1453,7 @@
 #if DISABLED(CLASSIC_JERK)
   #define JUNCTION_DEVIATION_MM 0.013 // (mm) Distance from real junction edge
   #define JD_HANDLE_SMALL_SEGMENTS    // Use curvature estimation instead of just the junction angle
+
                                       // for small segments (< 1mm) with large junction angles (> 135°).
 #endif
 
@@ -1539,6 +1524,7 @@
 /**
  * A Fix-Mounted Probe either doesn't deploy or needs manual deployment.
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
+
  */
 //#define FIX_MOUNTED_PROBE
 
@@ -1546,8 +1532,8 @@
  * Use the nozzle as the probe, as with a conductive
  * nozzle system or a piezo-electric smart effector.
  */
-#if DISABLED(Sidekick_289, Sidekick_747)
-  //#define NOZZLE_AS_PROBE
+#if DISABLED(Sidekick_289, Sidekick_747, TAZPro)
+  #define NOZZLE_AS_PROBE
 #endif
 
 /**
@@ -1559,8 +1545,9 @@
 /**
  * The BLTouch probe uses a Hall effect sensor and emulates a servo.
  */
-
-#define BLTOUCH
+#if ANY(Sidekick_289, Sidekick_747, TAZPro)
+  #define BLTOUCH
+#endif
 
 /**
  * Touch-MI Probe by hotends.fr
@@ -1748,6 +1735,7 @@
  * probe points to avoid hitting the bed and other hardware.
  * Servo-mounted probes require extra space for the arm to rotate.
  * Inductive probes need space to keep from triggering early.
+
  *
  * Use these settings to specify the distance (mm) to raise the probe (or
  * lower the bed). The values set here apply over and above any (negative)
@@ -1818,6 +1806,7 @@
 #define DISABLE_X false
 #define DISABLE_Y false
 #define DISABLE_Z false
+
 //#define DISABLE_I false
 //#define DISABLE_J false
 //#define DISABLE_K false
@@ -1888,6 +1877,7 @@
 //#define Z_AFTER_HOMING  10      // (mm) Height to move to after homing Z
 
 // Direction of endstops when homing; 1=MAX, -1=MIN
+
 // :[-1,1]
 #define X_HOME_DIR -1
 #if ANY(Workhorse, Sidekick_289, Sidekick_747)
@@ -1960,7 +1950,7 @@
     #define LULZBOT_X_MAX_POS 289
     #define LULZBOT_Y_MAX_POS 613
     #define LULZBOT_Z_MIN_POS -9
-    #define LULZBOT_Z_MAX_POS 282 
+    #define LULZBOT_Z_MAX_POS 285
   #endif
 #elif ENABLED(TAZProXT)
     #if defined(TOOLHEAD_Quiver_DualExtruder)
@@ -2028,6 +2018,7 @@
  * - Individual axes can be disabled, if desired.
  * - X and Y only apply to Cartesian robots.
  * - Use 'M211' to set software endstops on/off or report current state
+
  */
 
 // Min software endstops constrain movement within minimum coordinate bounds
@@ -2099,6 +2090,7 @@
   //#define FIL_RUNOUT3_PULLUP
   //#define FIL_RUNOUT3_PULLDOWN
 
+
   //#define FIL_RUNOUT4_STATE LOW
   //#define FIL_RUNOUT4_PULLUP
   //#define FIL_RUNOUT4_PULLDOWN
@@ -2168,6 +2160,7 @@
  * - AUTO_BED_LEVELING_UBL (Unified Bed Leveling)
  *   A comprehensive bed leveling system combining the features and benefits
  *   of other systems. UBL also includes integrated Mesh Generation, Mesh
+
  *   Validation and Mesh Editing systems.
  *
  * - MESH_BED_LEVELING
@@ -2238,6 +2231,7 @@
    */
   //#define G26_MESH_VALIDATION
   #if ENABLED(G26_MESH_VALIDATION)
+
     #define MESH_TEST_NOZZLE_SIZE    0.4  // (mm) Diameter of primary nozzle.
     #define MESH_TEST_LAYER_HEIGHT   0.2  // (mm) Default layer height for G26.
     #define MESH_TEST_HOTEND_TEMP  205    // (°C) Default nozzle temperature for G26.
@@ -2378,6 +2372,7 @@
 // @section homing
 
 // The center of the bed is at (X=0, Y=0)
+
 //#define BED_CENTER_AT_0_0
 
 // Manually set the home position. Leave these undefined for automatic settings.
@@ -2448,6 +2443,7 @@
  * Use these diagrams for reference:
  *
  *    Y                     Z                     Z
+
  *    ^     B-------C       ^     B-------C       ^     B-------C
  *    |    /       /        |    /       /        |    /       /
  *    |   /       /         |   /       /         |   /       /
@@ -2518,6 +2514,7 @@
 //
 // G20/G21 Inch mode support
 //
+
 //#define INCH_MODE_SUPPORT
 
 //
@@ -2588,6 +2585,7 @@
  *   S  Strokes / Repetitions
  *   T  Triangles (P1 only)
  *
+
  * Patterns:
  *   P0  Straight line (default). This process requires a sponge type material
  *       at a fixed bed location. "S" specifies strokes (i.e. back-forth motions)
@@ -2658,6 +2656,7 @@
   //#define NOZZLE_CLEAN_NO_Z
 
   // For a purge/clean station mounted on the X axis
+
   //#define NOZZLE_CLEAN_NO_Y
 
   // Require a minimum hotend temperature for cleaning
@@ -2728,6 +2727,7 @@
  *
  *  - When the printer boots up
  *  - Upon opening the 'Print from Media' Menu
+
  *  - When SD printing is completed or aborted
  *
  * The following G-codes can be used:
@@ -2798,6 +2798,7 @@
  * Info Screen Style (0:Classic, 1:Průša)
  *
  * :[0:'Classic', 1:'Průša']
+
  */
 #define LCD_INFO_SCREEN_STYLE 0
 
@@ -2868,6 +2869,7 @@
 
 //
 // This option reverses the encoder direction for Select Screen.
+
 //
 //  If CLOCKWISE normally moves LEFT this makes it go RIGHT.
 //  If CLOCKWISE normally moves RIGHT this makes it go LEFT.
@@ -2938,6 +2940,7 @@
 
 //
 // PanelOne from T3P3 (via RAMPS 1.4 AUX2/AUX3)
+
 // https://reprap.org/wiki/PanelOne
 //
 //#define PANEL_ONE
@@ -3008,6 +3011,7 @@
 //#define LCM1602
 
 //
+
 // PANELOLU2 LCD with status LEDs,
 // separate encoder and click inputs.
 //
@@ -3078,6 +3082,7 @@
 
 //
 // K.3D Full Graphic Smart Controller
+
 //
 //#define K3D_FULL_GRAPHIC_SMART_CONTROLLER
 
@@ -3148,6 +3153,7 @@
 //
 //#define MKS_LCD12864A
 //#define MKS_LCD12864B
+
 
 //
 // FYSETC variant of the MINI12864 graphic controller with SD support
@@ -3358,6 +3364,7 @@
 //
 // 480x272, 4.3", FSMC Display From MKS
 //
+
 //#define MKS_ROBIN_TFT43
 
 //
@@ -3568,6 +3575,7 @@
 
 // Support for Adafruit NeoPixel LED driver
 //#define NEOPIXEL_LED
+
 #if ENABLED(NEOPIXEL_LED)
   #define NEOPIXEL_TYPE   NEO_GRBW // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
   #define NEOPIXEL_PIN     4     // LED driving pin
@@ -3638,6 +3646,7 @@
 #endif
 
 //Making sure universal_toolhead is not selected while defining specific heads
+
 #if ANY(TOOLHEAD_SK285, TOOLHEAD_SK175, TOOLHEAD_M175, TOOLHEAD_H175, TOOLHEAD_SL_SE_HE, TOOLHEAD_HS_HSPLUS) && ANY(TOOLHEAD_Legacy_Universal, LULZBOT_Galaxy_Series)
   #error "Can not have universal tool head while defining spectific tool head"
 #endif
@@ -3645,3 +3654,4 @@
 #if LULZBOT_EXTRUDERS == 2 && NONE(LULZBOT_Quiver_TAZPro, LULZBOT_Gladiator_TAZProXT)
   #error "Tool Head Selected is not supported by Printer."
 #endif
+
